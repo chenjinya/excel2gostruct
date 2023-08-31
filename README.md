@@ -4,6 +4,22 @@ Convert excel datasets to golang struct
 
 
 # Usage
+
+## function
+
+### ConvertExcelToGo(filepath string, targets interface{}, sheetIndex int) error
+
+Convert excel datasets to golang struct
+
+Params:
+
+| param                | desc                              |
+|----------------------|-----------------------------------|
+| filepath(string)     | the excel file path               
+| targets(interface{}) | the target you want to convert to 
+| sheetIndex(int)      | he sheet index in excel           
+
+
 ```golang
 package main
 
