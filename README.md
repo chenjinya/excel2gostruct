@@ -25,7 +25,7 @@ func main() {
 ```
 
 stage.xlsx example
-![stage.xlsx](./stage.xlsx)
+![stage.xlsx](https://github.com/chenjinya/excel2gostruct/raw/master/stage.xlsx)
 
 # License
 
