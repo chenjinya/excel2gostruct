@@ -19,12 +19,11 @@ type Strategy struct {
 func main() {
     rawStrategies := []Strategy{}
     _ = excel2gostruct.ConvertExcelToGo("stage.xlsx", &rawStrategies, 1)
-	//println(utils.MustMarshalToString(targets))
 }
 
 ```
 
-stage.xlsx example
+file `stage.xlsx` example
 ![stage.xlsx](https://github.com/chenjinya/excel2gostruct/blob/main/stage_xlsx.png)
 
 # License
