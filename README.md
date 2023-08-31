@@ -10,6 +10,7 @@ Convert excel datasets to golang struct
 ### ConvertExcelToGo(filepath string, targets interface{}, sheetIndex int) error
 
 Convert excel datasets to golang struct
+将 Excel 的数据转换成 Golang 的结构体
 
 Params:
 
@@ -17,7 +18,7 @@ Params:
 |----------------------|-----------------------------------|
 | filepath(string)     | the excel file path               
 | targets(interface{}) | the target you want to convert to 
-| sheetIndex(int)      | he sheet index in excel           
+| sheetIndex(int)      | the sheet index in excel           
 
 
 ```golang
