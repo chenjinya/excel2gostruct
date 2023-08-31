@@ -3,7 +3,12 @@
 Convert excel datasets to golang struct 
 
 
+# Usage
 ```golang
+package main
+
+import 	"github.com/chenjinya/excel2gostruct"
+
 type Strategy struct {
 	Number      string `json:"number"`
 	Stage       string `json:"stage"`
@@ -12,13 +17,16 @@ type Strategy struct {
 }
 
 func main() {
-	// 打开 Excel 文件
-	targets := []Strategy{}
-	err := ConvertExcelToGo("stage.xlsx", &targets)
-	if err != nil {
-		panic(err)
-	}
+    rawStrategies := []Strategy{}
+    _ = excel2gostruct.ConvertExcelToGo("stage.xlsx", &rawStrategies, 1)
 	//println(utils.MustMarshalToString(targets))
 }
 
 ```
+
+stage.xlsx example
+![stage.xlsx](./stage.xlsx)
+
+# License
+
+MIT

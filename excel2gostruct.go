@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func getColumnName(n int) string {
+func GetColumnName(n int) string {
 	columnName := ""
 	for n > 0 {
 		n--
@@ -38,7 +38,7 @@ func ConvertExcelToGo(filepath string, targets interface{}, sheetIndex int) (err
 	for i, row := range rows {
 		rawData := make(map[string]string)
 		for j := range row {
-			colName := getColumnName(j + 1)
+			colName := GetColumnName(j + 1)
 			axis := colName + strconv.Itoa(i+1)
 			if i == 0 {
 				name := f.GetCellValue(sheetName, axis)
