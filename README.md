@@ -41,7 +41,7 @@ func main() {
 ```
 
 file `stage.xlsx` example
-![stage.xlsx](https://github.com/chenjinya/excel2gostruct/blob/main/stage_xlsx.png)
+![stage.xlsx](https://pic4.zhimg.com/80/v2-f2d7433153d8478d94593f00e86ac253.jpg)
 
 # License
 
